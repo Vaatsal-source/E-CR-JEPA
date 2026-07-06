@@ -55,6 +55,7 @@ Phase B: Leak-Free Information Retrieval Evaluation on the validation split.
 Final metrics are automatically written to /kaggle/working/final_evaluation_metrics.json.
 
 📊 Training Performance
+
 By isolating the modalities and mapping SAR directly to DINOv2, the model achieves highly stable latent alignment:
 
 Final Overall Loss: ~0.1604
@@ -62,6 +63,21 @@ Final Overall Loss: ~0.1604
 Final PSA Loss: ~0.2106
 
 Final DeCUR Loss: ~0.1183
+
 (Metrics recorded over a 100-epoch continuous run)
+
+### Information Retrieval Evaluation (Validation Split)
+
+| Evaluation Metric | Score | Scope |
+
+| :--- | :--- | :--- |
+
+| **Same-Modal F1@5** | **0.4824** | Intramodal Consistency |
+
+| **Same-Modal F1@10** | **0.5689** | Intramodal Consistency |
+
+| **Cross-Modal F1@5** | **0.5050** | Intermodal SAR-to-Optical Mapping |
+
+| **Cross-Modal F1@10** | **0.5885** | Intermodal SAR-to-Optical Mapping |
 
 Author: Vaatsal
